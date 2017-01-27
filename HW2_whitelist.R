@@ -1,5 +1,6 @@
 allowed_files = c("HW2.Rmd",
                   "README.md",
+                  "HW2_whitelist.R",
                   "wercker.yml")
 
 files = dir()
