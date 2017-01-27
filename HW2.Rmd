@@ -141,6 +141,11 @@ appear to be statistically significant?
 
 ```
 
+18. Explore variable effects using `termplot` adding interval estimates and partial residuals and comment on any features. 
+```{r}
+
+```
+
 18. Construct 95% confidence intervals for the coefficients, using the function `confint(lm.object)` and provide interpretations in terms of the original variables if you transformed any of the variables.  
 
 ```{r}
