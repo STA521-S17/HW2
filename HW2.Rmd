@@ -1,0 +1,149 @@
+---
+title: "HW2 [Your Team Name Here]"
+author: "[Your Names Here]"
+date: "Due  February 3, 2017"
+output: html_notebook
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(ISLR)
+# add other libraries here
+```
+
+This exercise involves the Auto data set from ISLR.  Load the data and answer the following questions adding your code in the code chunks. 
+
+```{r data, echo=F}
+data(Auto)
+```
+
+## Exploratory Data Analysis
+1. Create a summary of the data.  How many variables have missing data?
+
+```{r}
+
+```
+
+
+2.  Which of the predictors are quantitative, and which are qualitative?
+```{r}
+
+```
+
+3. What is the range of each quantitative predictor? You can answer this using the `range()` function.
+
+```{r}
+
+```
+
+4. What is the mean and standard deviation of each quantitative predictor?
+
+```{r}
+
+```
+
+5. Now remove the 10th through 85th observations. What is the
+range, mean, and standard deviation of each predictor in the
+subset of the data that remains?
+
+```{r}
+
+```
+
+6. Investigate the predictors graphically, using scatterplots or other tools of your choice. Create some plots
+highlighting the relationships among the predictors. Comment
+on your findings.
+```{r}
+
+```
+
+7. Suppose that we wish to predict gas mileage (mpg) on the basis of the other variables. Do your plots suggest that any of the other variables might be useful in predicting mpg? Justify your answer.
+
+```{r}
+
+```
+
+
+## Simple Linear Regression
+
+8.  Use the `lm()` function to perform a simple linear 
+regression with `mpg` as the response and `horsepower` as the
+predictor. Use the `summary()` function to print the results.
+Comment on the output.
+For example:
+    (a) Is there a relationship between the predictor and the response?
+    (b) How strong is the relationship between the predictor and
+the response?
+    (c) Is the relationship between the predictor and the response
+positive or negative?
+    (d) What is the predicted mpg associated with a horsepower of
+98? What are the associated 95% confidence and prediction
+intervals?
+
+9. Plot the response and the predictor. Use the `abline()` function to display the least squares regression line.
+```{r}
+
+```
+
+10. Use the `plot()` function to produce diagnostic plots of the least squares regression fit. Comment on any problems you see with the fit.
+
+```{r}
+
+```
+
+## Multiple Regression
+
+11. Produce a scatterplot matrix which includes all of the variables in the data set.
+```{r}
+
+```
+
+12. Compute the matrix of correlations between the variables 
+using the function `cor()`. You will need to exclude the
+name variable, `cor()` which is qualitative.
+```{r}
+
+```
+
+13. Use the `lm()` function to perform a multiple linear regression with `mpg` as the response and all other variables except `name` as the predictors, using the formula `mpg ~ . -name`, where the `.` includes all remaining variables in the dataframe and `-` removes a variable. Use the `summary()` function to print the results. 
+Comment on the output. For instance:
+    (a) Is there a relationship between the predictors and the response?
+    (b) Which predictors appear to have a statistically significant
+relationship to the response?
+    (c) What does the coefficient for the `year` variable suggest?
+
+14. Use the `plot()` function to produce diagnostic plots of the linear regression fit. Comment on any problems you see
+with the fit. Do the residual plots suggest any unusually
+large outliers? Does the leverage plot identify any
+observations with unusually high leverage?
+```{r}
+
+```
+
+
+15. Use the `*` and `:` symbols to fit linear regression
+models with interaction effects. Do any interactions 
+appear to be statistically significant?
+```{r}
+
+```
+
+16.  Examine the diagnostic plots for the model with interaction effects and comment on whether there are any problems.
+
+```{r}
+
+```
+
+
+17. Try a few different transformations of the predictor and response variables. Comment on your findings.  Are you able to find transformations that resolve any of the problems that were apparent in diagnostic plots so that assumptions of regression are satisfied?  (Provide supporting plots).
+
+```{r}
+
+```
+
+18. Construct 95% confidence intervals for the coefficients, using the function `confint(lm.object)` and provide interpretations in terms of the original variables if you transformed any of the variables.  
+
+```{r}
+
+```
+
