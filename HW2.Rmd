@@ -115,7 +115,7 @@ relationship to the response?
 14. Use the `plot()` function to produce diagnostic plots of the linear regression fit. Comment on any problems you see
 with the fit. Do the residual plots suggest any unusually
 large outliers? Does the leverage plot identify any
-observations with unusually high leverage?
+observations with unusually high leverage?   Please use `name` to identify the cases, rather than their case number.
 ```{r}
 
 ```
@@ -146,9 +146,11 @@ appear to be statistically significant?
 
 ```
 
-18. Construct 95% confidence intervals for the coefficients, using the function `confint(lm.object)` and provide interpretations in terms of the original variables if you transformed any of the variables.  
+19. Construct 95% confidence intervals for the coefficients, using the function `confint(lm.object)` and provide interpretations in terms of the original variables if you transformed any of the variables.  
 
 ```{r}
 
 ```
 
+
+20.  Provide a brief summary about the results of you model and that would suitable for discussing with a car dealer, who has little statistical background. 
