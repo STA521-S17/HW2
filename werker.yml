@@ -5,8 +5,8 @@ build:
     - script:
         name: Check for allowed files
         code: |
-          Rscript -e "source('https://raw.githubusercontent.com/Sta521-S17/Homework/master/hw2/hw2_whitelist.R')"
+          Rscript -e "source('https://raw.githubusercontent.com/STA521-S17/HW2/master/HW2_whitelist.R')"
     - script:
         name: Render R markdown
         code: |
-          Rscript -e "install.packages(ISLR);library(rmarkdown);render('hw1.Rmd')"
+          Rscript -e "install.packages("ISLR", repos="https://cloud.r-project.org");library(rmarkdown);render('hw1.Rmd')"
