@@ -10,6 +10,3 @@ From the File menu in RStudio, select `New Project`, then the option `Version Co
 Open the file HW2.Rmd in RStudio and add your code to the appropriate chunks.   You can add additional chunks as needed interspersed with text to provide your answers.
 
 [![wercker status](https://app.wercker.com/status/6aa9cca4cd45c84359e6a01eb7d0896c/s/master "wercker status")](https://app.wercker.com/project/byKey/6aa9cca4cd45c84359e6a01eb7d0896c)
-
-
-need to install rstudio/webtools ???
