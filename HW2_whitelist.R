@@ -1,4 +1,5 @@
 allowed_files = c("HW2.Rmd",
+                  "HW2.pdf",
                   "README.md",
                   "HW2_whitelist.R",
                   "wercker.yml")
